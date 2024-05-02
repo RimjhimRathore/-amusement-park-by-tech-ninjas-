@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Razorpay UPI Payment Integration</title>
+  <link rel="stylesheet" href="pay.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blueStrip"></div>
+    <div class="navbar">
+        <div class="logo"></div>
+        <div class="navi">
+            <div class="btn1">Home</div>
+            <!-- <div class="btn1">Things to do</div> -->
+            <div class="btn1">Services</div>
+            <div class="btn1">About Us</div>
+            <div class="btn1"><a href="paym.html">Tickets</a></div>
+        </div>
+    </div>
+    <div class="hero pay">
+        <div class="payment-form">
+          <label for="amount">Enter Amount:</label>
+          <input type="number" id="amount" placeholder="Enter amount to pay">
+          <button id="payButton">Pay Now</button>
+        </div>
+      
+        <div id="qrcode"></div> 
+        
+        <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+        <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+       </div>
+  <script src="pay.js"></script>
+</body>
+</html>
