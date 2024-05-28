@@ -35,13 +35,3 @@ document.getElementById('payButton').onclick = function() {
     var rzp = new Razorpay(options);
     rzp.open();
 }
-function sendMail() {
-    // You can add your email sending logic here
-    let parms = {
-        name: document.getElementById("name").value,
-        email : document.getElementById("email ").value,
-        subject : document.getElementById("subject ").value,
-        message: document.getElementById("message").value,
-    }
-    emailjs.send("service_wr1gqbs","template_elrgqbw",parms).then(alert('Email sent successfully!'));
-}
